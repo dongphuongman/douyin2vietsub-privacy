@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư — douyin2vietsub</title>
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1c1e21; --muted:#606770; --line:#dadde1;
+    --accent:#1877f2; --card:#f7f8fa;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#18191a; --fg:#e4e6eb; --muted:#b0b3b8; --line:#3a3b3c;
+      --accent:#4a9eff; --card:#242526;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#18191a; --fg:#e4e6eb; --muted:#b0b3b8; --line:#3a3b3c;
+    --accent:#4a9eff; --card:#242526;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:0 16px;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:48px 0 72px}
+  h1{font-size:1.75rem; line-height:1.25; margin:0 0 4px}
+  h2{font-size:1.15rem; margin:36px 0 10px; padding-top:18px; border-top:1px solid var(--line)}
+  h2:first-of-type{border-top:0; padding-top:0}
+  .sub{color:var(--muted); margin:0 0 28px; font-size:.95rem}
+  ul{padding-left:22px; margin:10px 0}
+  li{margin:6px 0}
+  a{color:var(--accent)}
+  code{background:var(--card); padding:2px 6px; border-radius:4px; font-size:.9em}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin:18px 0}
+  .en{margin-top:56px; padding-top:28px; border-top:2px solid var(--line)}
+  footer{margin-top:48px; color:var(--muted); font-size:.875rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Chính sách quyền riêng tư</h1>
+  <p class="sub">Ứng dụng <strong>douyin2vietsub</strong> · Cập nhật lần cuối: 06/10/2026</p>
+
+  <div class="card">
+    <strong>douyin2vietsub</strong> là công cụ tự động hoá cá nhân, chạy trên máy tính của chính chủ sở hữu.
+    Nó dùng để đăng video do chủ sở hữu tạo ra lên Trang Facebook và kênh YouTube của chính người đó.
+    Ứng dụng <strong>không phục vụ người dùng bên ngoài</strong> và <strong>không thu thập dữ liệu của bất kỳ ai khác</strong>.
+  </div>
+
+  <h2>1. Ứng dụng làm gì</h2>
+  <ul>
+    <li>Tải video thành phẩm từ máy tính của chủ sở hữu lên Trang Facebook mà chính người đó quản trị.</li>
+    <li>Đọc lại trạng thái của bài vừa đăng để xác nhận đăng thành công.</li>
+    <li>Không có giao diện đăng nhập cho người dùng khác. Không ai ngoài chủ sở hữu sử dụng ứng dụng này.</li>
+  </ul>
+
+  <h2>2. Thông tin được sử dụng</h2>
+  <p>Ứng dụng chỉ dùng mã truy cập (access token) do chính chủ sở hữu cấp cho Trang của mình, thông qua các quyền sau:</p>
+  <ul>
+    <li><code>pages_manage_posts</code> — đăng video lên Trang của chủ sở hữu.</li>
+    <li><code>pages_read_engagement</code> — đọc lại bài đã đăng để kiểm tra kết quả.</li>
+    <li><code>pages_show_list</code> — xác định đúng Trang cần đăng trong danh sách Trang của chủ sở hữu.</li>
+  </ul>
+  <p>Ứng dụng <strong>không</strong> thu thập, lưu trữ hay xử lý thông tin cá nhân của người xem, người theo dõi Trang, hay bất kỳ người dùng Facebook nào khác.</p>
+
+  <h2>3. Lưu trữ dữ liệu</h2>
+  <ul>
+    <li>Mã truy cập được lưu trong một tệp cấu hình <strong>trên máy tính cá nhân của chủ sở hữu</strong>, không gửi tới bất kỳ máy chủ nào.</li>
+    <li>Ứng dụng không vận hành máy chủ, không có cơ sở dữ liệu trực tuyến, không đồng bộ lên đám mây.</li>
+    <li>Siêu dữ liệu về video đã đăng (tiêu đề, mô tả, mã video) được ghi vào tệp cục bộ nhằm tránh đăng trùng.</li>
+  </ul>
+
+  <h2>4. Chia sẻ với bên thứ ba</h2>
+  <p>Không. Dữ liệu không được bán, cho thuê, trao đổi hay chia sẻ với bất kỳ bên thứ ba nào. Ứng dụng chỉ giao tiếp trực tiếp với API chính thức của Meta và Google.</p>
+
+  <h2>5. Thu hồi quyền và xoá dữ liệu</h2>
+  <p>Chủ sở hữu có thể thu hồi toàn bộ quyền truy cập bất cứ lúc nào:</p>
+  <ul>
+    <li>Facebook → <em>Cài đặt &amp; quyền riêng tư</em> → <em>Cài đặt</em> → <em>Ứng dụng và trang web</em> → gỡ ứng dụng <code>douyin2vietsub</code>.</li>
+    <li>Sau khi gỡ, mã truy cập hết hiệu lực ngay lập tức và ứng dụng không thể thao tác gì thêm.</li>
+    <li>Để xoá dữ liệu cục bộ, chỉ cần xoá tệp cấu hình và thư mục làm việc trên máy tính.</li>
+  </ul>
+
+  <h2>6. Trẻ em</h2>
+  <p>Ứng dụng không hướng tới và không được sử dụng bởi trẻ em dưới 13 tuổi.</p>
+
+  <h2>7. Thay đổi chính sách</h2>
+  <p>Mọi thay đổi sẽ được cập nhật trực tiếp trên trang này kèm ngày cập nhật mới.</p>
+
+  <h2>8. Liên hệ</h2>
+  <p>Mọi câu hỏi về chính sách này, vui lòng gửi tới
+     <a href="mailto:phuongdong2511@gmail.com">phuongdong2511@gmail.com</a>.</p>
+
+  <div class="en">
+    <h1>Privacy Policy</h1>
+    <p class="sub"><strong>douyin2vietsub</strong> app · Last updated: 6 October 2026</p>
+
+    <div class="card">
+      <strong>douyin2vietsub</strong> is a personal automation tool that runs on its owner's own computer.
+      It publishes the owner's own videos to the owner's own Facebook Page and YouTube channel.
+      It <strong>has no external users</strong> and <strong>collects no data about anyone else</strong>.
+    </div>
+
+    <h2>1. What the app does</h2>
+    <ul>
+      <li>Uploads finished video files from the owner's computer to a Facebook Page the owner administers.</li>
+      <li>Reads back the status of the post it just created, to confirm the upload succeeded.</li>
+      <li>Has no sign-in flow for other people. Nobody but the owner uses this app.</li>
+    </ul>
+
+    <h2>2. Information used</h2>
+    <p>The app uses only an access token the owner grants for their own Page, through these permissions:</p>
+    <ul>
+      <li><code>pages_manage_posts</code> — publish videos to the owner's Page.</li>
+      <li><code>pages_read_engagement</code> — read back published posts to verify the result.</li>
+      <li><code>pages_show_list</code> — identify the correct Page among the owner's Pages.</li>
+    </ul>
+    <p>The app does <strong>not</strong> collect, store or process personal information about viewers, Page followers, or any other Facebook user.</p>
+
+    <h2>3. Data storage</h2>
+    <ul>
+      <li>Access tokens are stored in a configuration file <strong>on the owner's personal computer</strong> and are never sent to any server.</li>
+      <li>The app runs no server, keeps no online database, and performs no cloud sync.</li>
+      <li>Metadata about published videos (title, description, video id) is written to a local file to prevent duplicate posts.</li>
+    </ul>
+
+    <h2>4. Third-party sharing</h2>
+    <p>None. No data is sold, rented, traded or shared with any third party. The app communicates only with the official Meta and Google APIs.</p>
+
+    <h2>5. Revoking access and deleting data</h2>
+    <ul>
+      <li>Facebook → <em>Settings &amp; privacy</em> → <em>Settings</em> → <em>Apps and websites</em> → remove <code>douyin2vietsub</code>.</li>
+      <li>Once removed, the access token is invalidated immediately and the app can do nothing further.</li>
+      <li>To delete local data, delete the configuration file and working directory on the computer.</li>
+    </ul>
+
+    <h2>6. Children</h2>
+    <p>The app is not directed at, and is not used by, children under 13.</p>
+
+    <h2>7. Changes to this policy</h2>
+    <p>Any changes will be posted on this page with an updated date.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions about this policy: <a href="mailto:phuongdong2511@gmail.com">phuongdong2511@gmail.com</a>.</p>
+  </div>
+
+  <footer>© 2026 douyin2vietsub — Hồ Sơ Tự Nhiên</footer>
+</div>
+</body>
+</html>
